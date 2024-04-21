@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/geral.css" media="screen">
+    <link rel="stylesheet" href="/css/moblie.css" media="screen">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="imagem-logo">
+            <img id="logo-local" src="image/local-logo.png" alt="local imagem">
+        </div>
+
+        <h1> Agência de Viagens</h1>
+        
+
+    </header>
+
+    <main>
+        <section class="img-fundo">
+
+            <div class="formulario">
+
+                <form action=""> <!--flex colum-->
+                    <legend>Solicite um orçamento</legend>
+
+                    <h2>Informe seus dados</h2>
+
+                    <div class="blocos nome"> <!--flex colum na clss blocos-->
+                        <label for="idnome">Nome</label>
+                        <input type="text" name="nome" id="idnome">
+                    </div>
+
+                    <div class="blocos mail">
+                        <label for="idmail">E-mail</label>
+                        <input type="email" name="mail" id="idmail">
+                    </div>
+
+                    <div class="blocos cel">
+                        <label for="idcel">Celular</label>
+                        <input type="tel" name="cel" id="idcel">
+                    </div>
+
+
+                    <div class="datas"> <!--flex row-->
+                        <div class="dataIda"> <!--flex column-->
+                            <label for="idida">Data da ida</label>
+                            <input type="date" name="dataida" id="idida">
+                        </div>
+
+                        <div class="dataVolta"> <!--flex column-->
+                            <label for="idvolta">Data da volta</label>
+                            <input type="date" name="datavolta" id="idvolta">
+                        </div>
+                    </div>
+
+                    <div class="origem">
+                        <div class="box-origem">
+                            <label for="idorigem">Origem</label>
+                            <select name="origem" id="idorigem">
+                                <option value="BA">Bahia</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="AM">Amazonas</option>
+                            </select>
+                        </div>
+
+                        <div class="box-destino">
+                            <label for="iddestino">Destino</label>
+                            <select name="destino" id="iddestino">
+                                <option value="RJ">Rio de janeiro</option>
+                                <option value="MA">Manaus</option>
+                                <option value="SP">São Paulo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="quarto"> <!--flex column-->
+
+                        <span>Quarto com Cama Infantil?</span>
+
+                        <div class="box-radio">
+
+                            
+                            <div class="box-sim">
+                                <input type="radio" name="resp" id="idsim">
+                                <label for="idsim">Sim</label>
+                            </div>
+                           
+                            <div class="box-nao">
+                                <input type="radio" name="resp" id="idnao">
+                                <label for="idnao">Não</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="prefererncia">
+
+                        <span>Preferência de Hospedagem</span>
+
+                        <div class="box-opcoes">
+
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for="idpiscina">Piscina</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for="idpiscina">Wi-fi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for="idpiscina">Garagem</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for="idpiscina">Suite</label>
+                            </div>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    
+                    <button  type="submit">Solicitar Orçamento</button>
+                  
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="ofertas">
+
+        </section>
+    </main>
+
+</body>
+
+</html>

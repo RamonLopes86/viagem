@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontRamon);
+
+    
+    
+}
+
+:root{
+
+    --fontRamon:'Raleway'
+
+}
+
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    font-size:13px;
+    gap: 10px;
+    padding-left: 50px;
+}
+
+
+header .imagem-logo {
+
+    width: 30px;
+}
+
+header #logo-local{
+
+    width: 100%;
+}
+
+
+main .img-fundo{
+
+    background-image: url(../image/bahia.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+main  .img-fundo .formulario {
+
+    
+    background-color: white;
+    width: 800px;
+    padding: 10px;
+    
+
+
+}
+
