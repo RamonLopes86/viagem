@@ -28,7 +28,8 @@
             <div class="formulario">
 
                 <form action=""> <!--flex colum-->
-                    <legend>Solicite um orçamento</legend>
+
+                    <legend> <img id="aviao" src="image/aviao.png" alt="icone de um avião"> Solicite um orçamento</legend>
 
                     <h2>Informe seus dados</h2>
 
@@ -48,36 +49,45 @@
                     </div>
 
 
-                    <div class="datas"> <!--flex row-->
-                        <div class="dataIda"> <!--flex column-->
-                            <label for="idida">Data da ida</label>
-                            <input type="date" name="dataida" id="idida">
+                    <div class="box-geral"> 
+
+                        <div class="data-origem">
+
+                            <div class="dataIda">
+                                <label for="idida">Data da ida</label>
+                                <input type="date" name="dataida" id="idida">
+                            </div>
+                            <div class="origem">
+                                <div class="box-origem">
+                                    <label for="idorigem">Origem</label>
+                                    <select name="origem" id="idorigem">
+                                        <option value="BA">Bahia</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="AM">Amazonas</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="dataVolta"> <!--flex column-->
-                            <label for="idvolta">Data da volta</label>
-                            <input type="date" name="datavolta" id="idvolta">
-                        </div>
-                    </div>
+                        <div class="volta-destino">
 
-                    <div class="origem">
-                        <div class="box-origem">
-                            <label for="idorigem">Origem</label>
-                            <select name="origem" id="idorigem">
-                                <option value="BA">Bahia</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="AM">Amazonas</option>
-                            </select>
+                            <div class="dataVolta">
+                                <label for="idvolta">Data da Volta</label>
+                                <input type="date" name="data" id="idvolta">
+                            </div>
+                            
+                            <div class="box-destino">
+                                <label for="iddestino">Destino</label>
+                                <select name="destino" id="iddestino">
+                                    <option value="RJ">Rio de janeiro</option>
+                                    <option value="MA">Manaus</option>
+                                    <option value="SP">São Paulo</option>
+                                </select>
+                            </div>
+
                         </div>
 
-                        <div class="box-destino">
-                            <label for="iddestino">Destino</label>
-                            <select name="destino" id="iddestino">
-                                <option value="RJ">Rio de janeiro</option>
-                                <option value="MA">Manaus</option>
-                                <option value="SP">São Paulo</option>
-                            </select>
-                        </div>
+                       
                     </div>
 
                     <div class="quarto"> <!--flex column-->
@@ -101,28 +111,28 @@
 
                     </div>
 
-                    <div class="prefererncia">
+                    <div class="preferencia">
 
                         <span>Preferência de Hospedagem</span>
 
                         <div class="box-opcoes">
 
                             <div>
-                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="piscina" id="idpiscina">
                                 <label for="idpiscina">Piscina</label>
                             </div>
 
                             <div>
-                                <input type="checkbox" name="" id="">
-                                <label for="idpiscina">Wi-fi</label>
+                                <input type="checkbox" name="wifi" id="idwifi">
+                                <label for="idwifi">Wi-fi</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="" id="">
-                                <label for="idpiscina">Garagem</label>
+                                <input type="checkbox" name="garagem" id="idgaragem">
+                                <label for="idgaragem">Garagem</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="" id="">
-                                <label for="idpiscina">Suite</label>
+                                <input type="checkbox" name="Suite" id="idsuite">
+                                <label for="idsuite">Suite</label>
                             </div>
 
                         </div>
@@ -132,7 +142,9 @@
                     </div>
 
                     
-                    <button  type="submit">Solicitar Orçamento</button>
+                    <div class="botao">
+                        <button  type="submit">Solicitar Orçamento</button>
+                    </div>
                   
 
                 </form>
@@ -142,6 +154,27 @@
         </section>
 
         <section class="ofertas">
+            <h3>Ofertas</h3>
+            <p>Com  atá 50% de desconto</p>
+
+            <section class="ft-geral">
+                <div class="rio">
+                    <img id="ftrio" src="image/rio.jpg" alt="Rio de janeiro">
+                </div>
+                <div class="demaisfts">
+                    <div class="ftmanaus">
+                        <img src="image/manaus.jpg" alt="Manaus">
+                        <img  src="image/saopaulo.jpg" alt="sao paulo">
+                    </div>
+                    <div class="ftmaranhao">
+                        <img src="image/niteroi.jpg" alt="Niteroi">
+                        <img src="image/maranhao.jpg" alt="Maranhão">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="explore">
 
         </section>
     </main>

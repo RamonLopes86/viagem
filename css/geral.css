@@ -16,24 +16,29 @@
 
 :root{
 
-    --fontRamon:'Raleway'
-
+    --fontRamon:'Raleway';
+    --corRoxo:#5D15D1
 }
+
 
 
 header{
 
     display: flex;
     flex-direction: row;
-    font-size:13px;
+    font-size:9px;
     gap: 10px;
-    padding-left: 50px;
+    padding: 10px 0px 10px 50px;
+    align-items: center;
+    color:var(--corRoxo);
+    
+    
 }
 
 
 header .imagem-logo {
 
-    width: 30px;
+    width: 22px;
 }
 
 header #logo-local{
@@ -48,7 +53,7 @@ main .img-fundo{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 800px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,10 +66,242 @@ main  .img-fundo .formulario {
 
     
     background-color: white;
-    width: 800px;
-    padding: 10px;
+    width: 900px;
+    margin: 0px 10px;
+    /* height: 640px; */
+    
+}
+    
     
 
 
+
+main > .img-fundo > .formulario > form {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    
 }
 
+main > .img-fundo > .formulario > form legend{
+
+    background-color: var(--corRoxo);
+    padding: 5px 0px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+main > .img-fundo > .formulario > form legend > #aviao{
+
+    width: 15px;
+    transform: rotate(-40deg);
+    position: relative;
+    top: 1px;
+}
+
+form h2 {
+
+    padding: 10px;
+}
+
+form .blocos {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 20px);
+    margin: 0px 10px;
+    padding: 4px 0px;
+}
+
+form .blocos input {
+
+    padding: 4px;
+}
+
+form .box-geral {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+form .box-geral .data-origem{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+}
+
+form .box-geral .volta-destino{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+
+}
+
+form .dataIda{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    
+    
+}
+
+form .dataIda input {
+
+    width: 100%;
+    padding: 5px;
+    
+}
+
+form .origem {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+form .origem .box-origem {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+form .origem .box-origem select  {
+
+    width: 100%;
+    padding: 5px;
+}
+
+
+form .dataVolta{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    
+}
+
+ .box-destino {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    
+
+}
+
+.box-destino  select {
+
+    padding: 5px;
+}
+
+form .dataVolta  input {
+
+    
+    padding: 5px;
+
+}
+
+form .box-destino{
+
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+form .quarto{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    
+    /* position: relative;
+    bottom: 20px;
+     */
+   
+    
+}  
+
+form .quarto .box-radio{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    
+   
+}
+
+form .preferencia {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    /* position: relative;
+    bottom: 30px; */
+}
+
+form .preferencia .box-opcoes{
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+.botao{
+
+    padding: 20px 0px 20px 10px;
+}
+
+button{
+
+    width: 170px;
+    padding: 7px;
+    border: none;
+    background-color: var(--corRoxo);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 2px rgba(128, 128, 128, 0.555);
+    border-radius: 2px;
+}
+
+button:active{
+
+    transform: translateY(.9px);
+    box-shadow:0px 3px 2px rgba(128, 128, 128, 0.555); ;
+}
+
+label{
+
+    position: relative;
+    left: 3px;
+}
+    
