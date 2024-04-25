@@ -1,3 +1,94 @@
 @charset "UTF-8";
 
 
+@media screen and (max-width:760px) {
+    
+        main >  .img-fundo > .formulario > form .botao button {
+
+
+            width: calc(100% - 10px);
+            
+        }
+
+        main > .ofertas .ft-geral > .rio {
+
+            width: 100%;
+            height: 200px;
+            background-position: top center;
+        }
+
+         main > .ofertas .ft-geral {
+
+            display: flex;
+            flex-direction: column;
+            
+         }
+
+         main > .ofertas .ft-geral .demaisfts .ftmanaus{
+
+           
+            display: flex;
+            flex-direction: column;
+            width: calc(100vw - 35px);
+            
+            
+         }
+
+         main > .ofertas .ft-geral .demaisfts .ftmaranhao{
+
+           
+            display: flex;
+            flex-direction: column;
+            width: calc(100vw - 35px);
+            
+            
+         }
+
+         main .ofertas .ft-geral{
+
+            gap: 10px;
+         }
+
+
+         main .explore .lencois-cachoeira{
+
+            display: flex;
+            flex-direction: column;
+            
+         }
+
+         main .explore .lencois-cachoeira .img-lencois{
+
+            width: 100%;
+
+         }
+
+         main .explore .lencois-cachoeira .img-cachoeira{
+
+            width: 100%;
+
+         }
+
+
+         footer .footer-pai{
+
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                align-items: center;
+                justify-content: center;
+         }
+
+         footer .footer-pai .contato{
+
+            /* position: relative;
+            left: 40px;
+            padding-top: 10px; */ 
+         }
+
+
+        
+
+
+
+}

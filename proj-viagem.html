@@ -35,17 +35,17 @@
 
                     <div class="blocos nome"> <!--flex colum na clss blocos-->
                         <label for="idnome">Nome</label>
-                        <input type="text" name="nome" id="idnome">
+                        <input type="text" name="nome" id="idnome" placeholder="Nome completo">
                     </div>
 
                     <div class="blocos mail">
                         <label for="idmail">E-mail</label>
-                        <input type="email" name="mail" id="idmail">
+                        <input type="email" name="mail" id="idmail" placeholder="Email para contato">
                     </div>
 
                     <div class="blocos cel">
                         <label for="idcel">Celular</label>
-                        <input type="tel" name="cel" id="idcel">
+                        <input type="tel" name="cel" id="idcel" placeholder="(xx) xxxx-xxxx">
                     </div>
 
 
@@ -61,6 +61,7 @@
                                 <div class="box-origem">
                                     <label for="idorigem">Origem</label>
                                     <select name="origem" id="idorigem">
+                                        <option selected value="partir">Partindo de</option>
                                         <option value="BA">Bahia</option>
                                         <option value="MS">Mato Grosso do Sul</option>
                                         <option value="AM">Amazonas</option>
@@ -79,6 +80,7 @@
                             <div class="box-destino">
                                 <label for="iddestino">Destino</label>
                                 <select name="destino" id="iddestino">
+                                    <option selected value="indo">indo para</option>
                                     <option value="RJ">Rio de janeiro</option>
                                     <option value="MA">Manaus</option>
                                     <option value="SP">São Paulo</option>
@@ -92,13 +94,15 @@
 
                     <div class="quarto"> <!--flex column-->
 
-                        <span>Quarto com Cama Infantil?</span>
+                        <div>
+                            <span style="color: black;">Quarto com Cama Infantil?</span>
+                        </div>
 
                         <div class="box-radio">
 
                             
                             <div class="box-sim">
-                                <input type="radio" name="resp" id="idsim">
+                                <input checked type="radio" name="resp" id="idsim">
                                 <label for="idsim">Sim</label>
                             </div>
                            
@@ -113,7 +117,9 @@
 
                     <div class="preferencia">
 
-                        <span>Preferência de Hospedagem</span>
+                        <div>
+                            <span style="color: black;">Preferência de Hospedagem</span>
+                        </div>
 
                         <div class="box-opcoes">
 
@@ -191,24 +197,87 @@
         </section>
 
         <section class="explore">
+            
             <h3>Explore a Natureza</h3>
+
             <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
 
-            <div class="lencois">
+            <div class="lencois-cachoeira">
                 <div class="img-lencois">
+                    <div class="ft-lencois">
 
-                    <span>Lençois Maranheinses,Brasil</span>
+                    </div>
+                    <strong style="padding-top: 10px;">Lençois Maranheinses,Brasil</strong>
+
                     <span>Ida e Volta a partir de R$79</span>
                 </div>
+
                 <div class="img-cachoeira">
 
-                    <span>Cachoeira Santa Barbara, Brasil</span>
+                    <div class="ft-cachoeira">
+
+                    </div>
+
+                    <strong style="padding-top: 10px;">Cachoeira Santa Barbara, Brasil</strong>
+
                     <span>Ida e Volta a partir de R$139</span>
                 </div>
             </div>
         </section>
     </main>
 
+    <footer>
+
+        <section class="footer-pai">
+
+            <section class="contato">
+
+                <div class="tx">
+                    <strong>Contato</strong>
+                </div>
+
+                <div class="localiza box-filho1">
+                    <img src="image/local.png" alt="">
+                    <p>Rio de Janeiro, RJ</p>
+                </div>
+                <div class="tel box-filho1">
+                    <img src="image/telefone.png" alt="">
+                    <p>Telefone (71)99126-5530</p>
+                </div>
+                <div class="mail box-filho1">
+                    <img src="image/email.png" alt="">
+                    <p>Email: dev.ramondasilvalopes@gmail.com</p>
+                </div>
+
+            </section>
+
+            <section class="redes">
+
+                <div class="tx">
+                    <strong>Nossas Redes Sociais</strong>
+                </div>
+
+                <div class="face box-filho1">
+                    <img src="image/fb.png" alt="">
+                    <p>/AgenciaDeViagem</p>
+                </div>
+                <div class="insta box-filho1">
+                    <img src="image/ig.png" alt="Instagram">
+                    <p>@AgenciaDeViagem</p>
+                </div>
+                <div class="twiter box-filho1">
+                    <img src="image/tt.png" alt="Twiter icone">
+                    <p>@AgenciaDeViagem</p>
+                </div>
+            </section>
+
+        </section>
+
+
+    </footer>
+
 </body>
+
+
 
 </html>

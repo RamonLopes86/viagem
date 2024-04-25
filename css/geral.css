@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fontRamon);
+    
 
     
     
@@ -31,6 +31,7 @@ header{
     padding: 10px 0px 10px 50px;
     align-items: center;
     color:var(--corRoxo);
+    font-family: var(--fontRamon);
     
     
 }
@@ -46,6 +47,11 @@ header #logo-local{
     width: 100%;
 }
 
+
+main{
+
+    font-family: var(--fontRamon);
+}
 
 main .img-fundo{
 
@@ -305,6 +311,11 @@ label{
     left: 3px;
 }
 
+main{
+
+    background-color: #EAEAEA;
+    padding-bottom: 10px;
+}
 
 main .ofertas {
 
@@ -419,6 +430,8 @@ main .ofertas .ft-geral .demaisfts .ftmaranhao {
 
 }
 
+
+
 .box-manaus{
 
     background-image: url(../image/manaus.jpg);
@@ -427,14 +440,218 @@ main .ofertas .ft-geral .demaisfts .ftmaranhao {
     background-size: cover;
 }
 
+.box-sp{
+
+    background-image: url(../image/saopaulo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-sp::after{
+
+    content: "Sao Paulo";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    padding: 5px 0px;
+    text-indent: 10px;
+
+}
+
+.box-niteroi{
+
+    background-image: url(../image/niteroi.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.box-niteroi::after{
+
+    content: "Niteroi";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    padding: 5px 0px;
+    text-indent: 10px;
+
+}
+
+.box-maranhao{
+
+    background-image: url(../image/maranhao.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.box-maranhao::after{
+
+    content: "Maranhão";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    padding: 5px 0px;
+    text-indent: 10px;
+
+}
+
 main .explore {
 
-    max-width: 1024px;
+    max-width: 1045px;
     margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 10px;
+    
+}
+
+.explore .lencois-cachoeira{
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+}
+
+
+.explore .lencois-cachoeira .img-lencois{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    gap: 10px;
+    
+}
+    
+    
+
+
+.explore .lencois-cachoeira .img-lencois span , strong {
+
+    text-indent: 10px;
+    
 }
 
 
 
+span {
 
+    padding-bottom: 10px;
+    color: rgb(128, 128, 128);
+    text-indent: 10px;
+}
+
+
+   
+
+.explore .lencois-cachoeira .img-lencois .ft-lencois{
+
+    background-image: url(../image/lencol.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+   
+
+}
+
+.explore .lencois-cachoeira .img-cachoeira {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+}
+
+.explore .lencois-cachoeira .img-cachoeira .ft-cachoeira{
+
+    background-image: url(../image/goias.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+
+}
+
+
+footer{
+
+    background-color: var(--corRoxo);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 10px 0px;
     
+    
+    
+}
+
+footer p {
+
+    font-size: 0.75rem;
+}
+
+footer .tx{
+
+    padding-bottom: 3px;
+}
+
+footer .footer-pai {
+
+    max-width:1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+footer .footer-pai img{
+
+    width: 15px;
+}
+
+footer .footer-pai .contato {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    
+}
+
+footer .footer-pai .box-filho1{
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+footer .footer-pai .redes {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
