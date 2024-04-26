@@ -212,6 +212,13 @@ main .img-fundo .formulario form .dataVolta{
     
 }
 
+main .img-fundo .formulario form .dataVolta input {
+
+    width: 100%;
+    padding: 5px;
+    
+}
+
 main .img-fundo .formulario form .volta-destino .box-destino {
 
     display: flex;
