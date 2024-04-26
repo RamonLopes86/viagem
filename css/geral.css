@@ -9,16 +9,16 @@
     padding: 0;
     box-sizing: border-box;
     
-
-    
-    
 }
 
+    
+    
 :root{
 
     --fontRamon:'Raleway';
     --corRoxo:#5D15D1
 }
+
 
 
 
@@ -51,6 +51,8 @@ header #logo-local{
 main{
 
     font-family: var(--fontRamon);
+    background-color: #EAEAEA;
+    padding-bottom: 10px;
 }
 
 main .img-fundo{
@@ -109,12 +111,12 @@ main > .img-fundo > .formulario > form legend > #aviao{
     top: 1px;
 }
 
-form h2 {
+main .img-fundo .formulario form h2 {
 
     padding: 10px;
 }
 
-form .blocos {
+main .img-fundo .formulario form .blocos {
 
     display: flex;
     flex-direction: column;
@@ -124,12 +126,12 @@ form .blocos {
     padding: 4px 0px;
 }
 
-form .blocos input {
+main .img-fundo .formulario form .blocos input {
 
     padding: 4px;
 }
 
-form .box-geral {
+main .img-fundo .formulario form .box-geral {
 
 
     display: flex;
@@ -139,7 +141,7 @@ form .box-geral {
 }
 
 
-form .box-geral .data-origem{
+main .img-fundo .formulario form .box-geral .data-origem{
 
     display: flex;
     flex-direction: column;
@@ -148,7 +150,7 @@ form .box-geral .data-origem{
     width: 50%;
 }
 
-form .box-geral .volta-destino{
+main .img-fundo .formulario form .box-geral .volta-destino{
 
     display: flex;
     flex-direction: column;
@@ -159,7 +161,7 @@ form .box-geral .volta-destino{
 
 }
 
-form .dataIda{
+main .img-fundo .formulario form .dataIda{
 
     display: flex;
     flex-direction: column;
@@ -170,14 +172,14 @@ form .dataIda{
     
 }
 
-form .dataIda input {
+main .img-fundo .formulario form .dataIda input {
 
     width: 100%;
     padding: 5px;
     
 }
 
-form .origem {
+main .img-fundo .formulario form .origem {
 
     display: flex;
     flex-direction: column;
@@ -186,7 +188,7 @@ form .origem {
     padding: 10px;
 }
 
-form .origem .box-origem {
+main .img-fundo .formulario form .origem .box-origem {
 
     display: flex;
     flex-direction: column;
@@ -194,14 +196,14 @@ form .origem .box-origem {
     
 }
 
-form .origem .box-origem select  {
+main .img-fundo .formulario form .origem .box-origem select  {
 
     width: 100%;
     padding: 5px;
 }
 
 
-form .dataVolta{
+main .img-fundo .formulario form .dataVolta{
 
     display: flex;
     flex-direction: column;
@@ -210,7 +212,7 @@ form .dataVolta{
     
 }
 
- .box-destino {
+main .img-fundo .formulario form .volta-destino .box-destino {
 
     display: flex;
     flex-direction: column;
@@ -220,19 +222,19 @@ form .dataVolta{
 
 }
 
-.box-destino  select {
+main .img-fundo .formulario form .volta-destino .box-destino  select {
 
     padding: 5px;
 }
 
-form .dataVolta  input {
+main .img-fundo .formulario form .dataVolta  input {
 
     
     padding: 5px;
 
 }
 
-form .box-destino{
+main .img-fundo .formulario form .box-destino{
 
     display: flex;
     flex-direction: column;
@@ -240,21 +242,19 @@ form .box-destino{
     
 }
 
-form .quarto{
+main .img-fundo .formulario form .quarto{
 
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 10px;
     
-    /* position: relative;
-    bottom: 20px;
-     */
-   
     
 }  
+   
+    
 
-form .quarto .box-radio{
+main .img-fundo .formulario form .quarto .box-radio{
 
     display: flex;
     flex-direction: row;
@@ -264,7 +264,7 @@ form .quarto .box-radio{
    
 }
 
-form .preferencia {
+main .img-fundo .formulario form .preferencia {
 
     display: flex;
     flex-direction: column;
@@ -274,7 +274,7 @@ form .preferencia {
     bottom: 30px; */
 }
 
-form .preferencia .box-opcoes{
+main .img-fundo .formulario form .preferencia .box-opcoes{
 
     display: flex;
     flex-direction: row;
@@ -282,12 +282,12 @@ form .preferencia .box-opcoes{
     
 }
 
-.botao{
+main .img-fundo .formulario form .botao{
 
     padding: 20px 0px 20px 10px;
 }
 
-button{
+main .img-fundo .formulario .botao button{
 
     width: 170px;
     padding: 7px;
@@ -299,23 +299,19 @@ button{
     border-radius: 2px;
 }
 
-button:active{
+main .img-fundo .formulario form .botao button:active{
 
     transform: translateY(.9px);
     box-shadow:0px 3px 2px rgba(128, 128, 128, 0.555); ;
 }
 
-label{
+main .img-fundo .formulario form label{
 
     position: relative;
     left: 3px;
 }
 
-main{
 
-    background-color: #EAEAEA;
-    padding-bottom: 10px;
-}
 
 main .ofertas {
 
@@ -637,6 +633,8 @@ footer .footer-pai .contato {
     gap: 15px;
     
     
+    
+    
 }
 
 footer .footer-pai .box-filho1{
@@ -655,3 +653,42 @@ footer .footer-pai .redes {
     
 }
 
+input , label {
+
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color:var(--corRoxo);
+    border-color: var(--corRoxo)
+  }
+
+  input[type="radio"]{
+
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 1px;
+
+  }
+
+  input[type="radio"]:checked{
+
+    background-color: var(--corRoxo);
+    border: 1px solid var(--corRoxo);
+  }

@@ -70,25 +70,52 @@
          }
 
 
-         footer .footer-pai{
+         footer .footer-pai {
 
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
                 align-items: center;
-                justify-content: center;
+                margin: 0px auto;
+                
+                  
+                
          }
 
-         footer .footer-pai .contato{
 
-            /* position: relative;
-            left: 40px;
-            padding-top: 10px; */ 
+         footer .footer-pai .redes {
+
+            position: relative;
+            right: 50px;
+
          }
+
+       
+        
+
+      }
+
+
+      @media screen  and (max-width:415px) {
+         
+         main .img-fundo .formulario form  .preferencia  .box-opcoes{
+
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               padding: 5px 0px;
+             }
+
+         main .img-fundo {
+
+            height: 950px;
+         }
+
+      }
+
+         
 
 
         
 
 
-
-}
