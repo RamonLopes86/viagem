@@ -675,12 +675,32 @@ input[type="checkbox"] {
     height: 15px;
     outline: none;
     cursor: pointer;
+    position: relative;
   }
 
   input[type="checkbox"]:checked {
-    background-color:var(--corRoxo);
-    border-color: var(--corRoxo)
+    background-color:white;
+    border-color: var(--corRoxo);
+    
+    
+   
   }
+
+  input[type="checkbox"]:checked::before{
+
+    content: '✔️';
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+    
+}
+    
+   
+    
+
+    
 
   input[type="radio"]{
 
@@ -698,4 +718,18 @@ input[type="checkbox"] {
 
     background-color: var(--corRoxo);
     border: 1px solid var(--corRoxo);
+   
+  }
+
+  a{
+
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover{
+
+    text-decoration: underline;
+    
+    
   }
