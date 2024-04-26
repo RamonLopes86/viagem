@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 
+@media screen and (max-width:1070px) {
+
+      footer .footer-pai{
+
+         justify-content: space-around;
+         
+      }
+}
+
 @media screen and (max-width:760px) {
     
         main >  .img-fundo > .formulario > form .botao button {
@@ -12,7 +21,7 @@
 
         main > .ofertas .ft-geral > .rio {
 
-            width: 100%;
+            width: calc(100vw - 35px);
             height: 200px;
             background-position: top center;
         }
