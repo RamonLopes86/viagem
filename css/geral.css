@@ -28,10 +28,16 @@ header{
     flex-direction: row;
     font-size:9px;
     gap: 10px;
-    padding: 10px 0px 10px 50px;
+    padding: 10px 0px 15px 50px;
     align-items: center;
     color:var(--corRoxo);
     font-family: var(--fontRamon);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid #5d15d1bd;
+    z-index: 1;
     
     
 }
